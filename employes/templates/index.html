@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% for d in data  %}
+    <h3>имя {{d.name}}</h3>
+    <h3>возраст {{d.age}}</h3>
+    <h3>зарплата {{d.salary}}</h3>
+    <h3>опыт {{d.skill}}</h3>
+    <img src="{{ d.image.url }}" >
+    <h3>Дата {{d.created}}</h3>
+    <br>
+{% endfor  %}
+</body>
+</html>
